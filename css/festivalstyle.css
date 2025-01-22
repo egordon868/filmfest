@@ -1,0 +1,277 @@
+.container {
+	width: 100%; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+	height: auto;
+    font-family: "Nunito Sans";
+    text-underline-offset: 2px;
+}
+
+section {
+	position: relative; /* This is needed so that all of our CSS positionings will work within all of our sections */
+    width: 100%;
+    top: 59px;
+}
+
+/* Typography */
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.body {
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+/* For Headers/Titles */
+h1 {
+	font-size: 64px;
+    font-weight: bold;
+	color: white;
+	position: absolute;
+	left: 80px;
+	top: 160px;
+}
+
+h1 span{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* h2 {
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 20px;
+} */
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.home h3 {
+    color: white;
+    position: relative;
+    top: 320px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+}
+
+.home h3 span:hover {
+    color:#FFC400;
+    cursor: pointer;
+    transition: .2s;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Header */
+.header {
+    height: 70px;
+    top: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+	
+    background: black;
+    font-size: 30px;
+    font-weight: bold;
+    color:#FFC400;
+    position: fixed;
+    z-index: 1;
+}
+
+.header p {
+    font-size: 30px;
+    padding: 20px, 0;
+}
+
+.header a {
+    color: #FFC400;
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+.navigation {
+	height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 240px;
+    padding-right: 240px;
+    box-sizing: border-box;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFC400;
+	position: fixed; 
+    top: 60px;
+    z-index: 1;
+}
+
+ul {
+	list-style: none; /* this removes bullet points on our "list" */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navigation a {
+    color: #FFC400;
+    text-decoration: none;
+}
+
+
+/* Festival Page CSS */
+.home {
+	height: 93vh;
+    top: 59px;
+    background: url(../images/festival\ hero.jpg);
+    background-size: 100%;
+    position: relative;
+}
+
+.home::before {
+    content: "";
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0,0,0,0) 50%) ;
+    opacity: 30%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.home a {
+    color: white;
+    text-decoration: none;
+}
+
+.home a:hover {
+    color: #FFC400;
+    transition: .2s ;
+}
+
+/* Festival Body */
+.topic_title {
+    width: 100%;
+    height: auto;
+    padding: 20px 80px;
+    background-color: #333333;
+    color: white;
+    box-sizing: border-box;
+}
+
+.topic_body {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topic_links {
+    width: 400px;
+    background: #e3e3e3;
+    padding: 40px 80px 80px 80px;
+    font-weight: bold;
+}
+
+.topic_links p {
+   padding-bottom: 30px;
+}
+
+.topic_links span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.topic_info {
+    width: 1500px;
+    background: white;
+    padding: 20px 80px 80px 80px;
+}
+
+.topic_info h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    border: 2px #FFC400 solid;
+    background: #FFC400;
+    padding: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.button:hover {
+    background: white;
+    border: 2px #FFC400 solid;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+.image1 {
+    height: 350px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background: url(../images/alumni.jpg) no-repeat;
+    background-size: contain;
+}
+
+.image2 {
+    height: 350px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background: url(../images/jodie\ comer.jpg) no-repeat;
+    background-size: contain;
+} 
+
+.image3 {
+    height: 350px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    background: url(../images/agatha.jpg) no-repeat;
+    background-size: contain;
+}
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: auto;
+    background: #FFC400;
+}
+
+.ftext {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.f1 {
+    width: 30vw;
+}
+
+.fs2 {
+    width: 30vw;
+    display:flex;
+    flex-direction: column;
+}

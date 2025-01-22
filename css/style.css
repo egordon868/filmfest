@@ -1,0 +1,370 @@
+.container {
+	width: 100%; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+	height: auto;
+    font-family: "Nunito Sans";
+    text-underline-offset: 2px;
+}
+
+section {
+	position: relative; /* This is needed so that all of our CSS positionings will work within all of our sections */
+    width: 100%;
+}
+
+/* Typography */
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.body {
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+/* For Headers/Titles */
+h1 {
+	font-size: 64px;
+    font-weight: bold;
+	color: white;
+	position: absolute;
+	left: 80px;
+	top: 160px;
+}
+
+h1 span{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+h4 {
+	font-size: 30px;
+    font-weight: bold;
+	color: white;
+	position: absolute;
+	left: 80px;
+	top: 328px;
+}
+
+
+/* Header */
+.header {
+    height: 70px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+	
+    background: black;
+    font-size: 30px;
+    font-weight: bold;
+    color:#FFC400;
+    position: fixed;
+    z-index: 1;
+}
+
+.header a {
+    color: #FFC400;
+    text-decoration: none;
+}
+
+/* Navigation Bar */
+.navigation {
+	height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 240px;
+    padding-right: 240px;
+    box-sizing: border-box;
+
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFC400;
+	position: fixed; 
+    top: 60px;
+    z-index: 1; /* having a z-index larger than 0 ensures that our nav bar is on top of other content on the page */
+}
+
+.navigation a {
+    color: #FFC400;
+    text-decoration: none;
+}
+
+/* .nav_bg {
+    height: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 240px;
+    padding-right: 240px;
+    box-sizing: border-box;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFC400;
+	position: fixed; 
+    top: 60px;
+    z-index: 1; 
+} */
+
+ul {
+	list-style: none; /* this removes bullet points on our "list" */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Home Page CSS */
+.home { /* this is the hero image area */
+	height: 93vh; /* same idea but for the vertical height of the web browser */
+    top: 59px;
+    background: url(../images/hero\ image\ home.webp);
+    background-size: cover;
+    position: relative;
+}
+
+.home::before {
+    content: "";
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 30%, rgba(255,0,0,0) 70%) ;
+    opacity: 80%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.button {
+    border: 2px #FFC400 solid;
+    background: #FFC400;
+    padding: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 80px;
+	bottom: 80px;
+}
+
+.button a {
+    color: black;
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+
+/* Featured Films */
+.featured_films_home {
+    height: auto;
+    background: #e3e3e3;
+    top: 59px;
+    position: relative;
+    padding: 80px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ffh_text p {
+    color: black;
+    position: relative;
+}
+
+.ffh1 {
+    font-size: 48px;
+    position: relative;
+}
+
+.ffh2 {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.ffh3 {
+    font-size: 20px;
+    position: relative;
+    top: 360px;
+    width: 123px;
+}
+
+.ffh3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.queen {
+    width: 821px;
+    height: 460px;
+    background: url(../images/queen\ of\ my\ dreams.jpg);
+    background-size: cover;
+    position: relative;
+} 
+
+.ffhqueen {
+    font-size: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+}
+
+/* Honored Guests */
+.guests_home {
+    height: auto;
+    background: #333333;
+    color: white;
+    top: 59px;
+    position: relative;
+    padding: 80px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ght1 {
+    position: relative;
+    font-size: 48px;
+}
+
+.ght2 {
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.gh_cards {
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.ghc1 {
+    width: 350px;
+    height: 350px;
+    background: url(../images/amy\ adams.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.ghc1::before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0,0,0,1)) ;
+    opacity: 30%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.gc1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.ghc2 {
+    width: 350px;
+    height: 350px;
+    background: url(../images/pamela\ anderson.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.ghc2::before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0,0,0,1)) ;
+    opacity: 30%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.gc2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.ghc3 {
+    width: 350px;
+    height: 350px;
+    background: url(../images/kieran\ culkin.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.ghc3::before {
+    content: "";
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(0,0,0,1)) ;
+    opacity: 30%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.gc3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.ght3 {
+    font-size: 20px;
+    position: relative;
+    width: 137px;
+    margin-bottom: 80px;
+}
+
+.ght3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: #FFC400;
+}
+
+.ftext {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+}
+.f1 {
+    width: 30vw;
+}
+
+.fs2 {
+    width: 30vw;
+    display:flex;
+    flex-direction: column;
+}
